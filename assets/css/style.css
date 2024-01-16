@@ -1,0 +1,248 @@
+:root{
+    --primary-strongCyan:hsl(171, 66%, 44%);
+    --primary-lightBlue:hsl(233, 100%, 69%);
+    --neutral-darkGrayishBlue:hsl(210, 10%, 33%);
+    --neutral-grayishBlue:hsl(201, 11%, 66%);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    min-height: 100vh;    
+}
+@media(min-width:576px){
+    body{
+        background-image: url("../../images/bg-header-desktop.png");
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: contain;
+        overflow-x: hidden;
+    }
+}
+@media(max-width:576px){
+    body{
+        background-image: url("../images/bg-header-mobile.png");
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: contain;
+        overflow-x: hidden;
+    }
+}
+/* COMMON */
+
+h1,h2,h4,i{
+    color: var(--neutral-darkGrayishBlue);
+}
+h6,p,a{
+    color: var(--neutral-grayishBlue);
+}
+p{
+    font-size: 18px;
+}
+h2{
+    margin-bottom: 1.3rem;
+}
+.btn{
+    font-size: 1rem;
+    font-family: inherit;
+    padding: 0.6rem 2rem;
+    border-radius: 25px;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.btn.ios{
+    background-color: var(--primary-strongCyan);
+}
+.btn.mac{
+    background-color: var(--primary-lightBlue);
+}
+.container{
+    text-align: center;
+    margin-top: 6rem;
+}
+@media(max-width:576px){
+    .container{
+        margin: 0.5rem;
+        padding: 0;
+    }
+}
+.headnigs{
+    margin: 0 15rem!important;
+    margin-bottom: 2rem!important;
+}
+@media(max-width:576px){
+    .headnigs{
+        margin: 1.5rem !important;
+    }
+    h1{
+        font-size: 2.25rem!important;
+    }
+    h6{
+        font-size: 16px!important;
+        margin-bottom: 1rem!important;
+        line-height: 1.5rem!important;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 2rem 5rem 2rem;
+    }
+    .btn{
+        width: 100%;
+    }
+    h2{
+        font-size: 1.9rem!important;
+    }
+    
+}
+
+
+/* HEADER */
+
+
+header img{
+    margin:4rem 0 4rem 0 ;
+}
+h1{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+h6{
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+/* FULL */
+.full{
+    margin-top: 8rem;
+    padding-right: 5rem;
+}
+.full .row .col:last-child{
+    padding-left: 3rem!important;
+}
+.full-left{
+    padding-left: 7rem;
+}
+img.computer{
+    left: -4%;
+    transform: translateX(-4%);
+    transform: scale(1.2);
+}
+.full h4{
+    margin-top: 4rem;
+}
+
+@media(max-width:567px){
+    .full{
+        padding: 0;
+        margin: 1rem;
+        margin-bottom: 8rem;
+        text-align: center;
+    }
+    .full img{
+        transform: translate(0);
+    }
+    .full-left{
+        padding: 1rem;
+    }
+}
+
+/* WORKFLOW */
+.container.workflow{
+    margin-top: 3rem;
+}
+.workflow .row{
+    margin-top: 3rem;
+}
+.workflow .row img{
+    margin-bottom: 3rem;
+    height: 45px;
+    width: auto;
+}
+.workflow .row h4{
+    margin-bottom: 2rem;
+}
+/* BRAND */
+.brand{
+    margin-top: 8rem;
+}
+
+/* CLİPBOARD */
+.clipboard{
+    margin-top: 8rem;
+}
+.clipboard p{
+    margin-bottom: 3rem;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #F5F6F8;
+    ;
+}
+footer .container{
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .container .links{
+    display: flex;
+    align-items: center;
+}
+footer .container .links .row .col a{
+    display:block;
+    margin: 0.8rem 0;
+    text-align: start;
+    width: 200px;
+}
+footer img{
+    height: 75px;
+    width: auto;
+    margin-right: 5rem;
+}
+footer .col{
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+i:hover,
+footer .row .col a:hover{
+    color: var(--primary-strongCyan);
+    cursor: pointer;
+}
+footer .social{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: end;
+}
+@media(max-width:576px){
+    footer .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    footer img{
+        margin: 0;
+    }
+    footer .container .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    footer .container .links .col .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }    
+    footer .container .links .col .row .col a{
+        text-align: center;
+    }
+}
